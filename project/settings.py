@@ -146,7 +146,8 @@ DEBUG_TOOLBAR_PANELS = [
     'debug_toolbar.panels.redirects.RedirectsPanel',
 ]
 
-try:
-    from production_settings import *
-except:
-    pass
+if not DEBUG:
+    try:
+        from production_settings import *
+    except:
+        pass
