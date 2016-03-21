@@ -1,6 +1,6 @@
 /**************стили от валидатора*************/
 
-label { /*margin-left: 15px; margin-top: 10px;*/ display:block; /*margin-bottom:10px; */position:relative; }
+label { /*margin-left: 15px; margin-top: 10px;*/ display:block; margin-bottom:2px; position:relative; }
 label:before, label:after { display:block; opacity:0; position:absolute; visibility:hidden; z-index:2; top: -45px; }
 label:before { content:''; height:0; line-height:0; position:absolute; }
 label:after { /*background-color:#f00;*/ color:#fff; content:attr(data); cursor:pointer; font-size:16px; height:auto;

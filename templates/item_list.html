@@ -29,7 +29,7 @@
 						{% endthumbnail %}
 					</div>
 					<p>Позвоните нам:</p>
-					<div class="h1">{{config.PHONE}}</div>
+					<div class="tel">{{config.PHONE}}</div>
 				</div>
 				<div class="clear"></div>
 			</div>
@@ -72,14 +72,16 @@
 	</section>
 
 	<div class="divider"></div>
+
 	<section id="products">
 		<div class="container">
 			<div class="col-md-12">
 				<div class="main">Категория "{{category.title}}":</div>
 			</div>
-			<br><br>
+        </div>
+        <div class="container">
 			{% for item in items %}
-				<div class="col-lg-4 col-md-4 col-sm-6 pp">
+				<div class="col-lg-4 col-md-4 col-sm-6 pp col-height">
 					<div class="product productt">
 						<div class="image">
 							{% thumbnail item.image "250x250" crop="center" as im %}
@@ -96,7 +98,7 @@
 			{% endfor %}
 		</div>
 	</section>
-	<script>
-		$('.productt').equalHeights();
-	</script>
+{#	<script>#}
+{#		$('.productt').equalHeights();#}
+{#	</script>#}
 {% endblock %}

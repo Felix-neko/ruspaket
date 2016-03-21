@@ -7,6 +7,25 @@
 	font-family: 'dindisplaypro regular';
 	src: url(../fonts/pfdindisplaypro-reg.ttf);
 }
+@font-face {
+	font-family: 'Conv_PFDINDISPLAYPRO-LIGHTITAL';
+	src: url('../fonts/PFDINDISPLAYPRO-LIGHTITAL.eot');
+	src: local('☺'), url('../fonts/PFDINDISPLAYPRO-LIGHTITAL.woff') format('woff'), url('../fonts/PFDINDISPLAYPRO-LIGHTITAL.ttf') format('truetype'), url('../fonts/PFDINDISPLAYPRO-LIGHTITAL.svg') format('svg');
+}
+@font-face {
+	font-family: 'Conv_PFDINDISPLAYPRO-LIGHT';
+	src: url('../fonts/PFDINDISPLAYPRO-LIGHT.eot');
+	src: local('☺'), url('../fonts/PFDINDISPLAYPRO-LIGHT.woff') format('woff'), url('../fonts/PFDINDISPLAYPRO-LIGHT.ttf') format('truetype'), url('../fonts/PFDINDISPLAYPRO-LIGHT.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Conv_PFDINDISPLAYPRO-BOLD';
+	src: url('../fonts/PFDINDISPLAYPRO-BOLD.eot');
+	src: local('☺'), url('../fonts/PFDINDISPLAYPRO-BOLD.woff') format('woff'), url('../fonts/PFDINDISPLAYPRO-BOLD.ttf') format('truetype'), url('../fonts/PFDINDISPLAYPRO-BOLD.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
 
 @media (min-width: 1200px){
 	.container {
@@ -19,7 +38,7 @@
 
 	#about .left{
 		width: 430px;
-		min-height: 551px;
+		min-height: 540px;
 	}
 
 	#about.container{
@@ -67,7 +86,7 @@ header .sidebar{
 header .sidebar .content .span{
 	font-size: 26px;
 	font-weight: normal;
-	font-family: "dindisplaypro italic";
+	font-family: "Conv_PFDINDISPLAYPRO-LIGHTITAL";
 	color: #BBC96A;
 }
 
@@ -98,7 +117,7 @@ header .sidebar .content .h1{
 	border: 2px solid #fff;
 	padding: 20px;
 	margin-bottom: 20px;
-	height: 545px;
+	height: 540px;
 	width: 100%;
 	font-family: "dindisplaypro regular";
 }
@@ -111,18 +130,20 @@ header .sidebar .content .h1{
 }
 
 #about .left p{
-	padding: 15px;
-	font-size: 20px;
+	padding: 15px 15px 0;
+	font-size: 24px;
 	text-transform: lowercase;
 	color: #D5D8DF;
 	margin-bottom: 0px;
+	font-family: "Conv_PFDINDISPLAYPRO-LIGHT";
 }
 
-#about .left .h1{
+#about .left .tel{
 	padding-left: 15px;
 	text-transform: uppercase;
 	color: #fff;
 	margin: 0;
+	font-size: 47px;
 }
 
 #about .top-block{
@@ -172,7 +193,7 @@ header .sidebar .content .h1{
 }
 
 #about .top-block p{
-	padding: 15px;
+	padding: 2px;
 	padding-left: 0;
 	font-size: 20px;
 	color: #D5D8DF;
@@ -180,7 +201,7 @@ header .sidebar .content .h1{
 }
 
 #about .bottom-block{
-	padding: 15px;
+	padding: 2px 15px 13px;
 	background: #99C635; 
 	font-family: "dindisplaypro regular";
 	border: 2px solid #fff;
@@ -217,7 +238,7 @@ header .sidebar .content .h1{
 
 #about .bottom-block .button{
 	width: 100%;
-	font-size: 24px;
+	font-size: 30px;
 	text-transform: uppercase;
 	color: #fff;
 	background-color: #BC3535;
@@ -239,10 +260,9 @@ header .sidebar .content .h1{
 #products .main{
 	text-decoration: underline;
 	text-transform: uppercase;
-	font-family: "dindisplaypro regular";
+	font-family: "Conv_PFDINDISPLAYPRO-BOLD";
 	color: #254775;
 	font-size: 25px;
-	font-weight: 700;
 	padding-bottom: 25px;
 }
 
@@ -258,6 +278,22 @@ header .sidebar .content .h1{
 	padding-left: 15px;
 }
 
+@media (min-width: 992px) {
+	
+	#products .pp:nth-child(3n+1) {
+		clear: both;
+	}
+	
+}
+
+@media (max-width: 991px) {
+	
+	#products .pp:nth-child(2n+1) {
+		clear: both;
+	}
+	
+}
+
 #products .product{
 	background-color: rgba(255,255,255,0.6);
 	padding: 15px;
@@ -270,8 +306,6 @@ header .sidebar .content .h1{
 
 #products .product img{
 	border: 2px solid #fff;
-	height: 250px;
-	width: 250px;
 }
 
 /***************************************************/
@@ -315,21 +349,19 @@ header .sidebar .content .h1{
 	text-decoration: underline;
 	text-transform: uppercase;
 	color: #fff;
-	font-weight: 700;
-	font-family: "dindisplaypro regular";
+	font-family: "Conv_PFDINDISPLAYPRO-BOLD";
 	padding-bottom: 20px;
 }
 
 #team .h4{
 	color: #fff;
-	font-size: 24px;
-	font-family: "dindisplaypro regular";
-	font-weight: 700;
+	font-size: 30px;
+	font-family: "Conv_PFDINDISPLAYPRO-BOLD";
 }
 
 #team p{
 	color: #fff;
-	font-family: "dindisplaypro regular";
+	font-family: "Conv_PFDINDISPLAYPRO-LIGHT";
 	font-size: 20px;
 }
 
@@ -349,38 +381,37 @@ header .sidebar .content .h1{
 #contacts .h3{
 	text-decoration: underline;
 	text-transform: uppercase;
-	font-family: "dindisplaypro regular";
+	font-family: "Conv_PFDINDISPLAYPRO-BOLD";
 	color: #fff;
-	font-weight: 700;
 	padding-bottom: 20px;
 }
 
 #contacts p{
 	color: #fff;
 	font-family: "dindisplaypro regular";
-	font-size: 24px;
+	font-size: 30px;
 }
 
 #contacts .top-block{
 	min-height: 110px;
-	margin-bottom: 45px;
+	margin-bottom: 50px;
 }
 
-#contacts .h2{
+#contacts .tel{
 	color: #fff;
 	font-family: "dindisplaypro regular";
 	text-align: justify;
 	margin: 0;
+	font-size:40px;
 }
 
 #contacts .bottom-block{
-	padding: 15px;
+	padding: 2px 15px 13px;
 	padding-top: 25px;
 	background: #99C635;
 	font-family: "dindisplaypro regular";
 	border: 2px solid #fff;
 	color: #7FA534;
-	min-height: 285px;
 	max-width: 513px;
 }
 
@@ -428,13 +459,21 @@ header .sidebar .content .h1{
 	margin-top: 25px;
 }
 
-#contacts .bottom .h3{
+#contacts .bottom .rec{
+	text-decoration: underline;
+	text-transform: none;
+	font-family: "Conv_PFDINDISPLAYPRO-BOLD";
+	color: #fff;
+	padding-bottom: 20px;
+	font-size: 30px;
+}
+#contacts .bottom .inn{
 	text-decoration: underline;
 	text-transform: none;
 	font-family: "dindisplaypro regular";
 	color: #fff;
-	font-weight: 700;
 	padding-bottom: 20px;
+	font-size: 34px;
 }
 
 /***************************************************/
@@ -467,24 +506,24 @@ footer .h2{
 
 @media(max-width: 1268px){
 	#about .left{
-		height: 647px;
+		height: 540px;
 		width: 100%;
 	}
 
 	#about .top-block{
 		width: 100%;
-		height: 350px;
+		height: 300px;
 	}
 
 	#about .bottom-block{
 		width: 100%;
-		height: 282px;
+		height: 220px;
 	}
 }
 
 @media(max-width: 1024px){
 	#about .bottom-block img{
-		margin-top: 2%;
+		margin-top: 20px;
 	}	
 
 	#about .bottom-block .button{
@@ -493,6 +532,10 @@ footer .h2{
 
 	#contacts .bottom-block img{
 		margin-top: 2%;
+	}	
+	
+	#about .left .tel{
+		font-size: 34px;
 	}
 
 	#contacts .bottom-block .button{
@@ -501,6 +544,79 @@ footer .h2{
 
 	#contacts .bottom .h2{
 		font-size: 24px;
+	}
+	#about .left{
+		height: 515px;
+		width: 100%;
+	}
+
+	#about .top-block{
+		width: 100%;
+		height: 300px;
+	}
+
+	#about .bottom-block{
+		width: 100%;
+		height: 200px;
+	}
+	#contacts .bottom .inn{
+		font-size: 29px;
+		padding-bottom: 10px;
+	}
+	#contacts .bottom .rec{
+		font-size: 27px;
+		padding-bottom: 10px;
+	}
+}
+
+@media(max-width: 990px){
+	#about .bottom-block img{
+		margin-top: 20px;
+	}	
+
+	#about .bottom-block .button{
+		font-size: 16px;
+	}
+
+	#contacts .bottom-block img{
+		margin-top: 2%;
+	}	
+	
+	#about .left .tel{
+		font-size: 34px;
+	}
+
+	#contacts .bottom-block .button{
+		font-size: 16px;
+	}
+
+	#contacts .bottom .h2{
+		font-size: 24px;
+	}
+	#about .left{
+		height: 400px;
+		width: 100%;
+	}
+
+	#about .top-block{
+		width: 100%;
+		height: 230px;
+	}
+
+	#about .bottom-block{
+		width: 100%;
+		height: 200px;
+	}
+	#about .top-block .h3{
+		font-size:20px;
+		margin-top: 0;
+	}
+	#about .top-block p{
+		font-size:18px;
+		margin:0;
+	}
+	#about .top-block .h2{
+		font-size:24px;
 	}
 }
 
@@ -521,7 +637,7 @@ footer .h2{
 	}
 
 	#about .bottom-block img{
-		margin-top: 0;		
+		margin-top: 20px;		
 	}
 
 	#contacts .bottom-block{
@@ -551,6 +667,12 @@ footer .h2{
 	#contacts .karta{
 		height: 350px;
 		margin-bottom: 25px;
+	}
+	#contacts .bottom .inn{
+		font-size: 24px;
+	}
+	#contacts .bottom .rec{
+		font-size: 23px;
 	}
 }
 
