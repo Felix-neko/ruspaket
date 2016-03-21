@@ -44,9 +44,9 @@
 	#about.container{
 		padding-right: 50px;
 	}
-	#about .top-block{
-		height: 300px;
-	}
+	/*#about .top-block{*/
+		/*height: 300px;*/
+	/*}*/
 	#products .product{
 		margin-left: 15px;
 		margin-right: 15px;
@@ -512,7 +512,7 @@ footer .h2{
 
 	#about .top-block{
 		width: 100%;
-		height: 300px;
+		min-height: 300px;
 	}
 
 	#about .bottom-block{
@@ -552,7 +552,7 @@ footer .h2{
 
 	#about .top-block{
 		width: 100%;
-		height: 300px;
+		min-height: 300px;
 	}
 
 	#about .bottom-block{
@@ -600,7 +600,7 @@ footer .h2{
 
 	#about .top-block{
 		width: 100%;
-		height: 230px;
+		min-height: 230px;
 	}
 
 	#about .bottom-block{
