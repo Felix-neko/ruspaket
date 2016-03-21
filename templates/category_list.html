@@ -9,6 +9,8 @@
 				<div class="main">Все категории:</div>
 			</div>
 			<br><br>
+        </div>
+        <div class="container">
 			{% for category in categories %}
 				<div class="col-lg-4 col-md-4 col-sm-6 pp">
 					<div class="product productt">
@@ -26,8 +28,5 @@
 			{% endfor %}
 		</div>
 	</section>
-	<script>
-		$('.productt').equalHeights();
-	</script>
 {% endblock content %}
 	
