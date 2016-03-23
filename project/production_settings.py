@@ -1,7 +1,8 @@
 # -*- coding: utf-8 -*-
 
-MEDIA_ROOT = "/var/Projects/ruspaket_media/media"
-STATIC_ROOT = "/var/Projects/ruspaket_media/static"
+MEDIA_ROOT = "/var/Projects/ruspaket_media/media/"
+
+STATIC_ROOT = "/var/Projects/ruspaket_media/static/"
 
 CACHES = {
     'default': {
@@ -10,5 +11,6 @@ CACHES = {
     }
 }
 
-TEMPLATE_DEBUG = False
-THUMBNAIL_DEBUG = False
+#DEBUG = True
+#TEMPLATE_DEBUG = True
+#THUMBNAIL_DEBUG = True
