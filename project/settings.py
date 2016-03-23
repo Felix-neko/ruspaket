@@ -11,9 +11,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'b%q0$g8ykfgiv41&h0kg@jl*v)2=$!j4vv!ukm*dqiabrfn50z'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ['localhost']
+ALLOWED_HOSTS = ['localhost', "xn--80akoseglc.xn--p1ai", "www.xn--80akoseglc.xn--p1ai"]
 
 
 # Application definition
@@ -84,7 +84,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 #STATIC_ROOT=os.path.join(BASE_DIR,'static/')
-STATICFILES_DIRS = (BASE_DIR, 'static')
+STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'), )
 MEDIA_URL = '/media/'
 MEDIA_ROOT=os.path.join(BASE_DIR,'media/')
 
@@ -145,6 +145,7 @@ DEBUG_TOOLBAR_PANELS = [
     'debug_toolbar.panels.logging.LoggingPanel',
     'debug_toolbar.panels.redirects.RedirectsPanel',
 ]
+
 
 if not DEBUG:
     try:
